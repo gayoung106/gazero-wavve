@@ -374,22 +374,22 @@ div {
 }
 
 /* section: main-contents */
-.multi.portrait-cell {
+.contents.portrait-cell {
   min-height: 383px;
 }
 
-.multi {
+.contents {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.multi .title {
+.contents .title {
   margin: 0 0 20px;
 }
 
-.multi .title h1 {
+.contents .title h1 {
   display: inline-block;
   font-size: 0;
   line-height: 36px;
@@ -421,11 +421,11 @@ div {
   z-index: 1;
 }
 
-.multi .swiper-slide {
+.contents .swiper-slide {
   width: 100%;
 }
 
-.multi .swiper-slide {
+.contents .swiper-slide {
   margin-bottom: 80px;
 }
 
@@ -446,7 +446,7 @@ div {
   width: 240px;
 }
 
-.multi a:not(.btn-more) {
+.contents a:not(.btn-more) {
   display: block;
 }
 
