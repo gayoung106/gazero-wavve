@@ -655,13 +655,13 @@ div {
 }
 
 .wavveon-footer-logo {
-  width: 94px;
+  /* width: 94px; */
   height: 38px;
   margin-right: 1px;
   font-size: 0;
   line-height: 38px;
   text-align: center;
-  background-color: #252525;
+  /* background-color: #252525; */
 }
 
 .footer-menu .footer-wavveon select {
