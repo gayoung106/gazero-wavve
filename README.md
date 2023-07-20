@@ -1,5 +1,9 @@
 # 📌 Wavve
 
+#### demo url
+
+https://gazero-wavve.vercel.app/
+
 🕐 23.07.19: Wavve(https://www.wavve.com/index.html) 를 참고해서 메인 페이지 아웃라인 잡기(html + css)
 
 ## ⭐ Color Reference
