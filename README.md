@@ -36,4 +36,5 @@ https://gazero-wavve.vercel.app/
 
 ### 0709 : main page outLine
 
+![](https://velog.velcdn.com/images/gazero_/post/e91d8fc3-bcc4-47b6-9f2f-39cc8e2b6051/image.jpeg)
 ![iShot_2023-07-20_11 02 48](https://github.com/gayoung106/gazero-wavve/assets/98731537/72ea7e70-0f0e-4945-85df-7fc4fdf0a1d9)
