@@ -40,13 +40,13 @@
             </div>
           </div>
           <div>
-            <div class="header-gnb">
+            <div class="header-link">
               <h1 class="logo">
                 <a href="/">
                   <img src="asset/navLogo.svg" alt="logo" />
                 </a>
               </h1>
-              <nav id="menu" class="gnb-left">
+              <nav id="menu" class="link-left">
                 <ul>
                   <li>
                     <a href="/">홈</a>
@@ -71,7 +71,7 @@
       <main id="contents" class="main">
         <div>
           <section>
-            <div id="main-banner" class="swiper-container multi-banner">
+            <div id="main-banner" class="swiper-container banner">
               <div class="main01-nav">
                 <button type="button" class="btn-pause"></button>
                 <div class="swiper-pagination swiper-pagination-bullets">
@@ -223,7 +223,7 @@
       <footer class="footer">
         <div class="footer-notice">
           <div class="footer-notice-inner">
-            <h2 class="footer-notice-hd">
+            <h2 class="footer-notice-head">
               <a href="/">공지사항</a>
             </h2>
             <button
@@ -291,41 +291,39 @@
             </div>
           </div>
 
-          <div class="footer-wavveon">
-         
-              < class="wavveon-footer-logo">
-                <label for="wavveon-logo">
-                  <img src="asset/footer-logo.svg" alt="/" />
-                </label>
+          <div class="footer-link">
+            <div class="link-footer-logo">
+              <label for="wavveon-logo">
+                <img src="asset/footer-logo.svg" alt="/" />
+              </label>
 
-                <select
-                  id="wavveon-logo"
-                  onchange="if(this.value) location.href=(this.value)"
+              <select
+                id="wavveon-logo"
+                onchange="if(this.value) location.href=(this.value)"
+              >
+                <option
+                  value
+                  disabled="disabled"
+                  selected="selected"
+                  hidden="hidden"
                 >
-                  <option
-                    value
-                    disabled="disabled"
-                    selected="selected"
-                    hidden="hidden"
-                  >
-                    사업자용 웨이브 가입
-                  </option>
-                  <option value="/">웨이브온 서비스 소개</option>
-                  <option value="/">웨이브온 PC방 서비스</option>
-                  <option value="/">웨이브온 도서관 서비스</option>
-                  <option value="/">웨이브온 병원 서비스</option>
-                  <option value="/">웨이브온 숙박 서비스</option>
-                  <option value="/">웨이브온 일반 소개</option>
-                </select>
-                <div class="footer-sns">
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <img src="asset/facebook.png" alt="페이스북" />
-                  </a>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <img src="asset/naverPost.png" alt="네이버포스트" />
-                  </a>
-                </div>
-              
+                  사업자용 웨이브 가입
+                </option>
+                <option value="/">웨이브온 서비스 소개</option>
+                <option value="/">웨이브온 PC방 서비스</option>
+                <option value="/">웨이브온 도서관 서비스</option>
+                <option value="/">웨이브온 병원 서비스</option>
+                <option value="/">웨이브온 숙박 서비스</option>
+                <option value="/">웨이브온 일반 소개</option>
+              </select>
+              <div class="footer-sns">
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                  <img src="asset/facebook.png" alt="페이스북" />
+                </a>
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                  <img src="asset/naverPost.png" alt="네이버포스트" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
