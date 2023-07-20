@@ -10,13 +10,6 @@
 <body>
   <div id="app">
     <div class="body">
-      <div class="skip">
-        <button type="button" tabindex="-1" id="go-contents">
-          탭 포커싱 초기화
-        </button>
-        <a href="#contents">본문 바로가기</a>
-        <a href="#menu">메뉴 바로가기</a>
-      </div>
       <header role="banner">
         <div class="header">
           <div>
@@ -25,7 +18,7 @@
             </div> -->
 
             <div class="header-nav">
-              <div class="wrap">
+              <div class="header-nav-wrap">
                 <ul class="nav">
                   <li>
                     <a href="/">로그인</a>
@@ -256,79 +249,84 @@
           </div>
         </div>
         <div class="footer-menu">
-          <div class="footer-info-area footer-info-link-all">
-            <ul>
-              <li>
-                <a href="/">회사소개</a>
-              </li>
-              <li>
-                <a href="/">인재채용</a>
-              </li>
-              <li>
-                <a href="/">서비스 소개</a>
-              </li>
-              <li>
-                <a href="/">이용약관</a>
-              </li>
-              <li class="footer-privacy">
-                <a href="/">개인정보 처리방침</a>
-              </li>
-              <li>
-                <a href="/">고객센터</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-info-area footer-info-copyright">
-            <span>콘텐츠웨이브 주식회사</span>
-            <span>대표이사 이태현</span>
-            <span class="last"
-              >고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 /
-              주말 및 공휴일 휴무)</span
-            >
-            <br />
-            <span>사업자등록번호 220-88-38020</span>
-            <span class="last"
-              >호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아
-              유한회사, 아마존웹서비시즈코리아 유한회사</span
-            >
-            <br />
-            <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-          </div>
-
-          <div class="footer-wavveon">
-            <div class="wavveon-footer-logo">
-              <label for="wavveon-logo">
-                <img src="asset/footer-logo.svg" alt="/" />
-              </label>
-              <select
-                id="wavveon-logo"
-                onchange="if(this.value) location.href=(this.value)"
+          <div class="footer-info-wrapper">
+            <div class="footer-info-area footer-info-link-all">
+              <ul>
+                <li>
+                  <a href="/">회사소개</a>
+                </li>
+                <li>
+                  <a href="/">인재채용</a>
+                </li>
+                <li>
+                  <a href="/">서비스 소개</a>
+                </li>
+                <li>
+                  <a href="/">이용약관</a>
+                </li>
+                <li class="footer-privacy">
+                  <a href="/">개인정보 처리방침</a>
+                </li>
+                <li>
+                  <a href="/">고객센터</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-info-area footer-info-copyright">
+              <span>콘텐츠웨이브 주식회사</span>
+              <span>대표이사 이태현</span>
+              <span class="last"
+                >고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 /
+                주말 및 공휴일 휴무)</span
               >
-                <option
-                  value
-                  disabled="disabled"
-                  selected="selected"
-                  hidden="hidden"
-                >
-                  사업자용 웨이브 가입
-                </option>
-                <option value="/">웨이브온 서비스 소개</option>
-                <option value="/">웨이브온 PC방 서비스</option>
-                <option value="/">웨이브온 도서관 서비스</option>
-                <option value="/">웨이브온 병원 서비스</option>
-                <option value="/">웨이브온 숙박 서비스</option>
-                <option value="/">웨이브온 일반 소개</option>
-              </select>
-              <div class="footer-sns">
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <img src="asset/facebook.png" alt="페이스북" />
-                </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <img src="asset/naverPost.png" alt="네이버포스트" />
-                </a>
-              </div>
+              <br />
+              <span>사업자등록번호 220-88-38020</span>
+              <span class="last"
+                >호스팅서비스제공자 : 마이크로소프트 유한회사,
+                구글클라우드코리아 유한회사, 아마존웹서비시즈코리아
+                유한회사</span
+              >
+              <br />
+              <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
             </div>
           </div>
+
+          <!-- <div class="footer-wavveon">
+            <div class="footer-logo-wrapper">
+              <div class="wavveon-footer-logo">
+                <label for="wavveon-logo">
+                  <img src="asset/footer-logo.svg" alt="/" />
+                </label>
+                <select
+                  id="wavveon-logo"
+                  onchange="if(this.value) location.href=(this.value)"
+                >
+                  <option
+                    value
+                    disabled="disabled"
+                    selected="selected"
+                    hidden="hidden"
+                  >
+                    사업자용 웨이브 가입
+                  </option>
+                  <option value="/">웨이브온 서비스 소개</option>
+                  <option value="/">웨이브온 PC방 서비스</option>
+                  <option value="/">웨이브온 도서관 서비스</option>
+                  <option value="/">웨이브온 병원 서비스</option>
+                  <option value="/">웨이브온 숙박 서비스</option>
+                  <option value="/">웨이브온 일반 소개</option>
+                </select>
+                <div class="footer-sns">
+                  <a href="/" target="_blank" rel="noopener noreferrer">
+                    <img src="asset/facebook.png" alt="페이스북" />
+                  </a>
+                  <a href="/" target="_blank" rel="noopener noreferrer">
+                    <img src="asset/naverPost.png" alt="네이버포스트" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </footer>
     </div>
