@@ -28,23 +28,6 @@
 ![](https://velog.velcdn.com/images/gazero_/post/7ab620a9-03de-4b05-b683-78d37fcf950c/image.png)
 ![](https://velog.velcdn.com/images/gazero_/post/1f0656a7-8ce4-4217-ad15-546f24952086/image.png)
 
-## Reference OutLine(wavve main)
-
-### header + main banner
-
-![](https://velog.velcdn.com/images/gazero_/post/67b9a530-c6c4-4b26-8270-f38b85b50f53/image.png)
-![](https://velog.velcdn.com/images/gazero_/post/30e84df5-36bb-4475-bc89-f82f44fe6bb3/image.png)
-
-### main contents section
-
-![](https://velog.velcdn.com/images/gazero_/post/4b706181-38e2-45ac-b1f4-a28d4a498c4d/image.png)
-![](https://velog.velcdn.com/images/gazero_/post/bdaef47e-1f7d-43a2-ab9a-0cc690423b23/image.png)
-
-### footer
-
-![](https://velog.velcdn.com/images/gazero_/post/7ab620a9-03de-4b05-b683-78d37fcf950c/image.png)
-![](https://velog.velcdn.com/images/gazero_/post/1f0656a7-8ce4-4217-ad15-546f24952086/image.png)
-
 ## Working
 
 ### 0709 : main page outLine
