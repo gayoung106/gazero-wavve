@@ -41,5 +41,5 @@ function autoSlide() {
   setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 이동
 }
 
-// 페이지 로드 시 자동 슬라이드
+// 페이지 로드 시 자동 슬라이드 //
 autoSlide();
