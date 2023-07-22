@@ -49,3 +49,14 @@ https://gazero-wavve.vercel.app/
 
 - 메인 컨텐츠 섹션의 썸네일 마우스 호버효과 : 확대(transform: scale(1.05))
 - 다른 부분 디테일한 부분 수정
+
+  > #### 현재까지 진행상황 !
+
+  1. header + main swiper
+     ![](https://velog.velcdn.com/images/gazero_/post/decc633f-1252-404b-8e41-b8f02bf7bd67/image.png)
+
+  2. main contents section
+     ![](https://velog.velcdn.com/images/gazero_/post/34e780f4-e6dd-4888-b926-b55d7ff1bf04/image.png)
+
+  ![iShot_2023-07-22_09 34 27](https://github.com/gayoung106/gazero-wavve/assets/98731537/cde37d6b-0138-41f9-8a21-8aae99dbfa49) 3. footer
+  ![](https://velog.velcdn.com/images/gazero_/post/dcb054c0-ffb6-4b44-beba-8b93c4cd9284/image.png)
