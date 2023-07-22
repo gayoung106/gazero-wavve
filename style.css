@@ -520,6 +520,24 @@ div {
   background-size: 16px auto;
 }
 
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb-image {
+  transition: transform 0.3s ease;
+}
+
+.thumb-image img {
+  width: 100%;
+  height: auto스;
+}
+
+.thumb:hover .thumb-image {
+  transform: scale(1.05);
+}
+
 /* footer */
 .footer {
   background-color: #1b1b1b;

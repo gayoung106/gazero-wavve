@@ -35,12 +35,17 @@ https://gazero-wavve.vercel.app/
 
 ## 🖥 Working
 
-### 0709 : main page outLine
+### 0719 : main page outLine
 
 ![](https://velog.velcdn.com/images/gazero_/post/e91d8fc3-bcc4-47b6-9f2f-39cc8e2b6051/image.jpeg)
 ![iShot_2023-07-20_11 02 48](https://github.com/gayoung106/gazero-wavve/assets/98731537/72ea7e70-0f0e-4945-85df-7fc4fdf0a1d9)
 
-### 0710: main page swiper outline / contents image
+### 0720: main page swiper outline / contents image
 
 - main contents section은 해당 컴포넌트 단위가 아래에 계속 반복됨
 - swiper에 이미지 규격 넣음 나머지는 js 작업이 필요
+
+### 0721: main contents section mouse hover effect
+
+- 메인 컨텐츠 섹션의 썸네일 마우스 호버효과 : 확대(transform: scale(1.05))
+- 다른 부분 디테일한 부분 수정

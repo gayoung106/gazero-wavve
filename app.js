@@ -28,7 +28,7 @@ function nextSlide() {
 
 // 슬라이드 이동 함수
 function moveSlide() {
-  const moveDistance = -currentIndex * 100; // 슬라이드 너비만큼 이동(규격)
+  const moveDistance = -currentIndex * 1240; // 슬라이드 너비만큼 이동(규격)
   swiperWrapper.style.transform = `translateX(${moveDistance}%)`;
 }
 
@@ -36,10 +36,10 @@ function moveSlide() {
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
 
-// 자동 슬라이드
-function autoSlide() {
-  setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 이동
-}
+// // 자동 슬라이드
+// function autoSlide() {
+//   setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 이동
+// }
 
-// 페이지 로드 시 자동 슬라이드 //
-autoSlide();
+// // 페이지 로드 시 자동 슬라이드 //
+// autoSlide();
