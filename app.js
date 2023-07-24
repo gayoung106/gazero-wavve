@@ -1,45 +1,92 @@
-// 슬라이드 요소
-const swiperContainer = document.querySelector(".swiper-container");
-const swiperWrapper = document.querySelector(".swiper-wrapper");
-const swiperSlides = document.querySelectorAll(".swiper-slide");
-const prevButton = document.querySelector(".swiper-button-prev");
-const nextButton = document.querySelector(".swiper-button-next");
+document.addEventListener("DOMContentLoaded", function () {
+  // Custom Slider Functionality
+  function initSlider() {
+    const sliderContainer = document.querySelector(".swiper-container");
+    const sliderWrapper = sliderContainer.querySelector(
+      ".swiper-wrapper-banner"
+    );
+    const slides = sliderWrapper.querySelectorAll(".swiper-slide");
+    const prevBtn = sliderContainer.querySelector(".swiper-button-prev");
+    const nextBtn = sliderContainer.querySelector(".swiper-button-next");
+    const pagination = sliderContainer.querySelector(".swiper-pagination");
 
-// 슬라이드 인덱스 번호 초기화
-let currentIndex = 0;
+    const slideCount = slides.length;
+    // let slideWidth = slides[0].offsetWidth;
+    // const slideMargin = 10; // Adjust as needed
+    const size = slides[0].clientWidth;
 
-// 이전버튼 슬라이드 이동 함수
-function prevSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = swiperSlides.length - 1;
+    let currentIndex = 1;
+    // let offset = 0;
+    function updateSliderPosition() {
+      // const totalSlideWidth = slideWidth + slideMargin;
+      // offset = -currentIndex * slideWidth;
+      // console.log("size: ", -size * currentIndex);
+      sliderWrapper.style.transform = `translateX(${
+        -size * currentIndex + 190
+      }px)`;
+    }
+
+    function updatePagination() {
+      pagination
+        .querySelectorAll(".swiper-pagination-bullet")
+        .forEach((bullet, index) => {
+          bullet.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    function goToSlide(index) {
+      sliderWrapper.style.transition = "0.3s ease-in-out";
+      if (index < 0) {
+        currentIndex = slideCount - 1;
+      } else if (index >= slideCount) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+      updateSliderPosition();
+      updatePagination();
+    }
+
+    // Recalculate slideWidth on window resize
+    window.addEventListener("resize", function () {
+      slideWidth = slides[0].offsetWidth;
+      updateSliderPosition();
+    });
+
+    sliderWrapper.addEventListener("transitionend", () => {
+      if (currentIndex === slides.length - 1) {
+        currentIndex = slides.length - (slides.length - 1);
+        sliderWrapper.style.transition = "0s";
+        sliderWrapper.style.transform = `translateX(${
+          -size * currentIndex + 190
+        }px)`;
+      }
+      if (currentIndex === 0) {
+        // if (slides[currentIndex].id === "firstIndex") {
+        currentIndex = slides.length - 2;
+        sliderWrapper.style.transition = "0s";
+        sliderWrapper.style.transform = `translateX(${
+          -size * currentIndex + 190
+        }px)`;
+      }
+    });
+
+    // Initialize slider position
+    updateSliderPosition();
+    updatePagination();
+
+    // Event listeners for navigation buttons
+    prevBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
+    nextBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+
+    // Event listeners for pagination bullets
+    pagination
+      .querySelectorAll(".swiper-pagination-bullet")
+      .forEach((bullet, index) => {
+        bullet.addEventListener("click", () => goToSlide(index));
+      });
   }
-  moveSlide();
-}
 
-// 다음 버튼 슬라이드 이동 함수
-function nextSlide() {
-  currentIndex++;
-  if (currentIndex >= swiperSlides.length) {
-    currentIndex = 0;
-  }
-  moveSlide();
-}
-
-// 슬라이드 이동 함수
-function moveSlide() {
-  const moveDistance = -currentIndex * 1240; // 슬라이드 너비만큼 이동(규격)
-  swiperWrapper.style.transform = `translateX(${moveDistance}%)`;
-}
-
-// 버튼에 클릭 이벤트를 추가
-prevButton.addEventListener("click", prevSlide);
-nextButton.addEventListener("click", nextSlide);
-
-// // 자동 슬라이드
-// function autoSlide() {
-//   setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 이동
-// }
-
-// // 페이지 로드 시 자동 슬라이드 //
-// autoSlide();
+  // Initialize the custom slider
+  initSlider();
+});
