@@ -101,4 +101,4 @@ https://gazero-wavve.vercel.app/
 
 ### 완성된 swiper
 
-![iShot_2023-07-24_11 43 50](https://github.com/gayoung106/gazero-wavve/assets/98731537/5d136808-517f-4548-ab97-37e19d02b529)
+![iShot_2023-07-24_11 46 24](https://github.com/gayoung106/gazero-wavve/assets/98731537/e75b694e-cda3-45aa-8bb5-1bbe6aed82cb)
