@@ -60,3 +60,45 @@ https://gazero-wavve.vercel.app/
 
   ![iShot_2023-07-22_09 34 27](https://github.com/gayoung106/gazero-wavve/assets/98731537/cde37d6b-0138-41f9-8a21-8aae99dbfa49) 3. footer
   ![](https://velog.velcdn.com/images/gazero_/post/dcb054c0-ffb6-4b44-beba-8b93c4cd9284/image.png)
+
+### 0724: 순수자바스트립트로 메인 배너 스와이퍼 만들기
+
+#### 스와이퍼의 구조 및 특징
+
+<img width="1713" alt="iShot_2023-07-24_11 18 07" src="https://github.com/gayoung106/gazero-wavve/assets/98731537/4d2ec1dc-23fe-4c23-8e95-3d4ae0c950ac">
+
+1. 초기 화면에 총 3개의 컨텐츠가 노출(이전 컨텐츠, 메인컨텐츠, 다음 컨텐츠)
+2. 무한 루프의 형태
+3. 이전/다음 버튼을 누르면 컨텐츠가 이전컨텐츠/다음컨텐츠로 이동함
+
+#### 필요한 html요소 가져오기
+
+![이름 없는 노트북 (1)-9](https://github.com/gayoung106/gazero-wavve/assets/98731537/60346782-747d-4908-9a43-3602cfa862bf)
+
+1. swiper-container
+2. swiper-wrapper-banner
+3. swiper-slide
+4. swiper-button-prev / swiper-button-next
+5. swiper-pagination
+
+#### 필요한 요소 변수로 저장
+
+1. slideCount: swiper-slide는 배열의 형태로 가져옴(querySelectorAll)
+2. size: 실제로 차지하는 공간을 확인하기 위함
+3. currentIndex: 현재(메인컨텐츠) 보여질 인덱스, 초깃값 1
+
+#### 필요한 함수
+
+1. updateSliderPosition(): 슬라이드 배치되는 위치를 조정하는 함수
+2. updatePagination(): bullet에 따라 인덱스를 조정하는 함수
+3. goToSlide(): 제공된 인덱스를 기준으로 슬라이드 이동시키는 함수
+
+#### 필요한 이벤트 리스너
+
+1. resize: 슬라이더의 위치가 다시 계산되고 새창 크기에 맞게 업데이트 되도록 하기 위한 기능
+2. transitioned: 슬라이드 무한 루프를 위해 - 마지막 슬라이드에 도달했을 때, 인덱스가 조정
+3. click: 이전/다음 버튼을 통한 컨텐츠 이동 & bullet을 이용한 컨텐츠 이동
+
+### 완성된 swiper
+
+![iShot_2023-07-24_11 43 50](https://github.com/gayoung106/gazero-wavve/assets/98731537/5d136808-517f-4548-ab97-37e19d02b529)
