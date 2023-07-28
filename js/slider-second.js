@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperContainer = document.getElementById("main-banner");
-  const swiperWrapper = swiperContainer.querySelector(".swiper-wrapper-banner");
-  const prevButton = swiperContainer.querySelector(".swiper-button-prev");
-  const nextButton = swiperContainer.querySelector(".swiper-button-next");
+  const swiperContainer = document.getElementById("swiper-container");
+  const swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
+  const prevButton = swiperContainer.querySelector(".second-button-prev");
+  const nextButton = swiperContainer.querySelector(".second-button-next");
 
   const contentSets = swiperWrapper.querySelectorAll(".swiper-slide");
   const contentSetWidth = contentSets[0].clientWidth; // 각 슬라이드의 너비
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 다음 슬라이드로 이동하는 함수
   function nextSet() {
-    if (currentSet < contentSets.length - 1) {
+    if (currentSet < currentSet.length - 1) {
       currentSet++;
       swiperWrapper.style.transform = `translateX(-${
         contentSetWidth * currentSet

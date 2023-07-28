@@ -287,6 +287,8 @@ div {
   background: #e8e8e8;
 }
 
+/*  */
+
 /* .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -312,13 +314,16 @@ div {
   opacity: 1;
 }
 
-.banner .swiper-button-prev {
+.banner .swiper-button-prev,
+.second-button-prev {
   right: 100px;
   background-image: url(asset/next.png);
 }
 
 .banner .swiper-button-next,
-.banner .swiper-button-prev {
+.banner .swiper-button-prev,
+.second-button-next,
+.second-button-prev {
   position: absolute;
   top: 186px;
   z-index: 20;
@@ -331,7 +336,9 @@ div {
 }
 
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.second-button-next,
+.second-button-prev {
   position: absolute;
   top: 50%;
   z-index: 50;
@@ -340,7 +347,8 @@ div {
   background-repeat: no-repeat;
 }
 
-.banner .swiper-button-next {
+.banner .swiper-button-next,
+.second-button-next {
   left: 100px;
   background-image: url(asset/prev.png);
 }
@@ -375,6 +383,7 @@ div {
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+  transition: transform 0.3s ease;
 }
 
 .banner .swiper-slide {
