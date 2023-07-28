@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperContainer = document.getElementById("swiper-container");
+  const swiperContainer = document.getElementById("app");
   const swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
   const prevButton = swiperContainer.querySelector(".second-button-prev");
   const nextButton = swiperContainer.querySelector(".second-button-next");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSet < currentSet.length - 1) {
       currentSet++;
       swiperWrapper.style.transform = `translateX(-${
-        contentSetWidth * currentSet
+        contentSetWidth * currentSet + 500
       }px)`;
     }
   }
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSet > 0) {
       currentSet--;
       swiperWrapper.style.transform = `translateX(-${
-        contentSetWidth * currentSet
+        contentSetWidth * currentSet + 500
       }px)`;
     }
   }

@@ -102,3 +102,24 @@ https://gazero-wavve.vercel.app/
 ### 완성된 swiper
 
 ![iShot_2023-07-24_11 46 24](https://github.com/gayoung106/gazero-wavve/assets/98731537/e75b694e-cda3-45aa-8bb5-1bbe6aed82cb)
+
+### 0727: 여러개 묶여있는 데이터 꾸러미 스와이퍼
+
+![이름 없는 노트북 (1)-10](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/a2aa3598-ed10-4aea-9d50-78dd7dc875d4)
+
+#### 해당 화면 구성은
+
+```basic
+.swiper-container가 .swiper-wrapper를 둘러 싸고 있고,
+그 안에
+데이터 하나 하나는
+.swiper-slide - .thumb - a태그 - .thumb-image... 이렇게 세부 내용이 들어가 있음
+```
+
+#### 계획
+
+> swiper-container와 wrapper가 스와이퍼 1화면의 구성이어야 할 것 같음
+
+- 지금까지 swiper-container / swiper-wrapper 안에서 돌리면 된다고 착각함
+- 그리고 화면을 확인하지 못한 이유가 있음 : 404오류를 만남..
+  ![iShot_2023-07-29_08 53 23](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/ad93953a-5476-4539-9a69-a9bbb95d4345)
