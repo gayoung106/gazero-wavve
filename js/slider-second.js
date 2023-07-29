@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperContainer = document.getElementById("app");
+  const swiperContainer = document.getElementById("swiper-container");
   const swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
   const prevButton = swiperContainer.querySelector(".second-button-prev");
   const nextButton = swiperContainer.querySelector(".second-button-next");

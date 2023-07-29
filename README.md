@@ -123,3 +123,4 @@ https://gazero-wavve.vercel.app/
 - 지금까지 swiper-container / swiper-wrapper 안에서 돌리면 된다고 착각함
 - 그리고 화면을 확인하지 못한 이유가 있음 : 404오류를 만남..
   ![iShot_2023-07-29_08 53 23](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/ad93953a-5476-4539-9a69-a9bbb95d4345)
+  > 해결방법: 404문제는 경로 문제라고 함. 그래서 그냥 지우고 새로 임포트해줬더니, 404오류가 잡힘 !
