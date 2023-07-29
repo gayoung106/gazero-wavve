@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperContainer = document.getElementById("swiper-container");
-  const swiperWrapper = swiperContainer.querySelector(".swiper-wrapper");
-  const prevButton = swiperContainer.querySelector(".second-button-prev");
-  const nextButton = swiperContainer.querySelector(".second-button-next");
+  const swiperContainer = document.querySelectorAll(".swiper-container")[1];
+  const swiperWrapper = swiperContainer.childNodes[1];
+  const nextButton = document.querySelector(".second-button-prev");
+  const prevButton = document.querySelector(".second-button-next");
+  const recomaned = document.querySelector(".recomaned_container");
+  const contentSets = recomaned.children.length;
 
-  const contentSets = swiperWrapper.querySelectorAll(".swiper-slide");
-  const contentSetWidth = contentSets[0].clientWidth; // 각 슬라이드의 너비
+  const contentSetWidth = swiperWrapper.clientWidth; // 각 슬라이드의 너비
 
   let currentSet = 0;
 
   // 다음 슬라이드로 이동하는 함수
-  function nextSet() {
-    if (currentSet < currentSet.length - 1) {
+  function nextSet(e) {
+    if (currentSet < contentSets - 1) {
       currentSet++;
-      swiperWrapper.style.transform = `translateX(-${
-        contentSetWidth * currentSet + 500
+      recomaned.style.transform = `translateX(-${
+        contentSetWidth * currentSet
       }px)`;
     }
   }
@@ -23,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function prevSet() {
     if (currentSet > 0) {
       currentSet--;
-      swiperWrapper.style.transform = `translateX(-${
-        contentSetWidth * currentSet + 500
+      recomaned.style.transform = `translateX(-${
+        contentSetWidth * currentSet
       }px)`;
     }
   }
