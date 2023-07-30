@@ -477,6 +477,13 @@ div {
   position: relative;
   transition-property: transform;
 }
+
+.recommend_container {
+  display: flex;
+  width: 200%;
+  transition: 0.3s ease-in-out;
+}
+
 .portrait:last-child {
   margin-right: 0;
 }

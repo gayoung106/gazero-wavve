@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiperWrapper = swiperContainer.childNodes[1];
   const nextButton = document.querySelector(".second-button-prev");
   const prevButton = document.querySelector(".second-button-next");
-  const recomaned = document.querySelector(".recomaned_container");
+  const recomaned = document.querySelector(".recommend_container");
   const contentSets = recomaned.children.length;
 
   const contentSetWidth = swiperWrapper.clientWidth; // 각 슬라이드의 너비
