@@ -174,6 +174,4 @@ https://gazero-wavve.vercel.app/
 
 ### 완성된 두번째 swiper
 
-![](https://velog.velcdn.com/images/gazero_/post/8d86c73d-2eab-4602-ac62-e2a18ee992cf/image.gif)
-
-- 일단 기능을 완성시키는게 목적이라, 슬라이드 버튼을 재활용 했음. 추후 수정예정 !
+![iShot_2023-07-30_22 04 55](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/041e508a-2d60-40c9-b992-31e2b5010dc0)
