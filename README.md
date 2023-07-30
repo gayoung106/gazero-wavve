@@ -103,7 +103,17 @@ https://gazero-wavve.vercel.app/
 
 ![iShot_2023-07-24_11 46 24](https://github.com/gayoung106/gazero-wavve/assets/98731537/e75b694e-cda3-45aa-8bb5-1bbe6aed82cb)
 
-### 0727: 여러개 묶여있는 데이터 꾸러미 스와이퍼
+## 0727: 여러개 묶여있는 데이터 꾸러미 스와이퍼
+
+> 글로 설명하는 것이 어렵기 때문에, 진짜 예시화면을 보자면 아래와 같음
+
+![](https://velog.velcdn.com/images/gazero_/post/dd3b2b5b-0fd4-4c88-8d8a-6053808da387/image.gif)
+
+#### 그니까 최종목표🙏: 뭐, 5개의 데이터가 1세트로 돌아가는 스와이퍼를 만들고 싶다 ! (아자, 아자 화이팅 🔆)
+
+출처: 웨이브 웹페이지
+
+#### 여러 데이터로 묶여있는 클래스를 스와이퍼로 만들기
 
 ![이름 없는 노트북 (1)-10](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/a2aa3598-ed10-4aea-9d50-78dd7dc875d4)
 
@@ -116,25 +126,28 @@ https://gazero-wavve.vercel.app/
 .swiper-slide - .thumb - a태그 - .thumb-image... 이렇게 세부 내용이 들어가 있음
 ```
 
-#### 계획
+#### 🤔 계획 / 시행착오
 
 > swiper-container와 wrapper가 스와이퍼 1화면의 구성이어야 할 것 같음
 
 - 지금까지 swiper-container / swiper-wrapper 안에서 돌리면 된다고 착각함
-- 그리고 화면을 확인하지 못한 이유가 있음 : 404오류를 만남..
+- 심경의 변화: 화면에 변화가 없음😯 -> 이상함을 눈치챔😨 -> 콘솔을 확인함😣 : 404오류를 만남..😱
   ![iShot_2023-07-29_08 53 23](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/ad93953a-5476-4539-9a69-a9bbb95d4345)
-  > 해결방법: 404문제는 경로 문제라고 함. 그래서 그냥 지우고 새로 임포트해줬더니, 404오류가 잡힘 !
+  > 해결방법: 404문제는 경로 문제라고 함. 그래서 그냥 지우고 새로 임포트해줬더니, 404오류가 잡힘👏 !
 
-### 두번째 swiper 만들기
+### 다시 돌아와서 ! 두번째 swiper 만들기
 
-#### 화면 구성 확인 및 CSS 수정
+#### 🌟 화면 구성 확인 및 CSS 수정
 
 - swiper-container 클래스 자체가 1개 세트로 돌아가도록 해야함
-  <img width="1293" alt="iShot_2023-07-30_21 08 50" src="https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/76f425ac-f7a1-408a-9e54-cfa2a1fa53a5">
 
-1.  swiper-container:1번째/swiper-container:2번째...스와이퍼를 감싸는 div class recommend_container를 만듦
-    즉, recommend_container안에 sipwer-container, swiper-container...이런식으로 들어가 있음
+![](https://velog.velcdn.com/images/gazero_/post/4a79efda-268f-45ab-b7ad-0bf2be086b0c/image.png)
+
+1.  'swiper-container: 1번째 / swiper-container: 2번째 /...n번째' swiper-container를 감싸는 div class recommend_container를 만듦
+    (즉, recommend_container안에 sipwer-container, swiper-container...이런식으로 들어가 있음)
 2.  옆으로 넘어가는 스와이퍼이므로 스와이퍼의 부모 div에 display flex를 줌
+
+#### 역시 글로 설명하는건 어려우니깐, 코드로 설명하자면 요론식👇
 
 ```html
 <div class="recommend_container" style="display:flex">
@@ -148,9 +161,9 @@ https://gazero-wavve.vercel.app/
 
 - 더 상위 contents 클래스는 width:1240px임. overflow:hidden을 주고, 한 세트만 노출되게 적용
 
-#### JS
+#### 🌟 JS
 
-#### 필요한 html요소 가져오기
+#### 💡 필요한 html요소 가져오기
 
 1. (.swiper-container)[1] : swiper-container 클래스를 가진 요소들을 선택하고, 그중에서 두번째에 해당(인덱스[1])하는 부분을 선택
 2. .second-button-prev
@@ -159,19 +172,25 @@ https://gazero-wavve.vercel.app/
 5. 슬라이드 너비를 계산하기 위해서 swiperContainer.childNodes[1]를 가져옴
    (swiperContainer = .swiper-container)
 
-#### 필요한 요소 변수로 저장
+#### 💡 필요한 요소 변수로 저장
 
 1. currentIndex: 현재(메인컨텐츠) 보여질 인덱스, 초깃값 0
 
-#### 필요한 함수
+#### 💡 필요한 함수
 
 1. nextSet(): 다음 슬라이드 이동
 2. pervSet(): 이전 슬라이드 이동
 
-#### 필요한 이벤트 리스너
+#### 💡 필요한 이벤트 리스너
 
 1. click: 이전/다음 버튼을 통한 컨텐츠 이동
 
-### 완성된 두번째 swiper
+### 🩷완성된 두번째 swiper🩷
 
 ![iShot_2023-07-30_22 04 55](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/041e508a-2d60-40c9-b992-31e2b5010dc0)
+
+# 결론:
+
+#### 바닐라 JS로 첫번째 스와이퍼를 완성해서, 두번째 스와이퍼도 쉬울거라고 생각했지만. 역시나 호락호락 하지 않았다. 노드가 너무 많고 복잡할수록 구조를 파악하는게 매우 중요함을 느꼈음.
+
+#### 완성하긴 했지만, 꾸러미로 묶인 swiper-container가 매우 신경쓰임 구조가 깔끔하지 않아서 마음에 들지 않음. 이 부분을 계속 고민할 필요가 있음 ! 😰
