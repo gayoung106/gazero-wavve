@@ -124,3 +124,56 @@ https://gazero-wavve.vercel.app/
 - 그리고 화면을 확인하지 못한 이유가 있음 : 404오류를 만남..
   ![iShot_2023-07-29_08 53 23](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/ad93953a-5476-4539-9a69-a9bbb95d4345)
   > 해결방법: 404문제는 경로 문제라고 함. 그래서 그냥 지우고 새로 임포트해줬더니, 404오류가 잡힘 !
+
+### 두번째 swiper 만들기
+
+#### 화면 구성 확인 및 CSS 수정
+
+- swiper-container 클래스 자체가 1개 세트로 돌아가도록 해야함
+  <img width="1293" alt="iShot_2023-07-30_21 08 50" src="https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/76f425ac-f7a1-408a-9e54-cfa2a1fa53a5">
+
+1.  swiper-container:1번째/swiper-container:2번째...스와이퍼를 감싸는 div class recommend_container를 만듦
+    즉, recommend_container안에 sipwer-container, swiper-container...이런식으로 들어가 있음
+2.  옆으로 넘어가는 스와이퍼이므로 스와이퍼의 부모 div에 display flex를 줌
+
+```html
+<div class="recommend_container" style="display:flex">
+  <div class="swiper-container">...</div>
+  <div class="swiper-container">...</div>
+</div>
+```
+
+3.  옆으로 배치가 되는 것을 확인 했음, 그러면 1개의 swiper-container세트만 보여지게 화면을 구성해야 함
+    <img width="1356" alt="iShot_2023-07-30_21 07 23" src="https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/d600e4a4-a416-4972-b0bb-433f0b316e08">
+
+- 더 상위 contents 클래스는 width:1240px임. overflow:hidden을 주고, 한 세트만 노출되게 적용
+
+#### JS
+
+#### 필요한 html요소 가져오기
+
+1. (.swiper-container)[1] : swiper-container 클래스를 가진 요소들을 선택하고, 그중에서 두번째에 해당(인덱스[1])하는 부분을 선택
+2. .second-button-prev
+3. .second-button-next
+4. .recommend_container
+5. 슬라이드 너비를 계산하기 위해서 swiperContainer.childNodes[1]를 가져옴
+   (swiperContainer = .swiper-container)
+
+#### 필요한 요소 변수로 저장
+
+1. currentIndex: 현재(메인컨텐츠) 보여질 인덱스, 초깃값 0
+
+#### 필요한 함수
+
+1. nextSet(): 다음 슬라이드 이동
+2. pervSet(): 이전 슬라이드 이동
+
+#### 필요한 이벤트 리스너
+
+1. click: 이전/다음 버튼을 통한 컨텐츠 이동
+
+### 완성된 두번째 swiper
+
+![](https://velog.velcdn.com/images/gazero_/post/8d86c73d-2eab-4602-ac62-e2a18ee992cf/image.gif)
+
+- 일단 기능을 완성시키는게 목적이라, 슬라이드 버튼을 재활용 했음. 추후 수정예정 !
