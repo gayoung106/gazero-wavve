@@ -189,8 +189,30 @@ https://gazero-wavve.vercel.app/
 
 ![iShot_2023-07-30_22 04 55](https://github.com/gayoung106/gazero-wavve-webpage/assets/98731537/041e508a-2d60-40c9-b992-31e2b5010dc0)
 
-# 결론:
+## 0802: 데이터모델링(erd 작업)
 
-#### 바닐라 JS로 첫번째 스와이퍼를 완성해서, 두번째 스와이퍼도 쉬울거라고 생각했지만. 역시나 호락호락 하지 않았다. 노드가 너무 많고 복잡할수록 구조를 파악하는게 매우 중요함을 느꼈음.
+![gayoung_WavveProj](https://github.com/gayoung106/WebBase2023/assets/98731537/3db95305-dcc5-441b-ab41-647e33ad333c)
 
-#### 완성하긴 했지만, 꾸러미로 묶인 swiper-container가 매우 신경쓰임 구조가 깔끔하지 않아서 마음에 들지 않음. 이 부분을 계속 고민할 필요가 있음 ! 😰
+### Tables
+
+- User
+- Profile
+- Membership
+- Card
+- MyList
+- Content
+- DetailContent
+- Category
+- Banner
+- EditorPick
+- LiveChart
+- Update
+- HBO
+- Only
+- Top20
+- Comming
+- SubTitle
+- Dubbing
+- ContentActor
+- Language
+- Actor
