@@ -102,6 +102,7 @@
               <!-- swiper -->
               <div class="swiper-wrapper-banner">
                 {% for banner in banner_data %}
+
                 <div class="swiper-slide">
                   <img
                     id="img{{ loop.index }}"
@@ -110,48 +111,6 @@
                   />
                 </div>
 
-                <!-- <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner0.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner1.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner2.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner3.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner4.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    id="{{ loop.index0 }}"
-                    src="../../static/images/banner5.webp"
-                    alt="{{ banner.bannerAlt }}"
-                  />
-                </div> -->
                 {% endfor %}
               </div>
               <!--  -->

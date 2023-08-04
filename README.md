@@ -1,8 +1,13 @@
 # 📌 Wavve
 
-#### demo url
+## 8.4 현재까지 기능정의서
 
-https://gazero-wavve.vercel.app/
+![](/server/static/images/final.gif)
+
+- 네비바, 메인(배너섹션, 컨텐츠색션1, 컨텐츠섹션2, ...), 푸터
+- [배너 슬라이드](https://velog.io/@gazero_/프로젝트-wavve바닐라JS로-스와이퍼캐러셀기능-구현하기swipercarousel) (바닐라 JS로 완성)
+- [켄텐트섹션 슬라이드](https://velog.io/@gazero_/프로젝트-wavve바닐라JS로-묶인-데이터-꾸러미-스와이퍼캐러셀기능-구현하기swipercarousel) (바닐라 JS로 완성)
+- 배너 컨텐츠 [데이터연결](https://velog.io/@gazero_/프로젝트-wavve-DB-연결하기-flask) (Mysql & flask)
 
 🕐 23.07.19: Wavve(https://www.wavve.com/index.html) 를 참고해서 메인 페이지 아웃라인 잡기(html + css)
 🕐 23.07.20: main 이미지 작업 및 css 작업 추가
