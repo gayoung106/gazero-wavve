@@ -1,5 +1,15 @@
 # 📌 Wavve
 
+```
+Front: Vanila JavaScript
+Back: Flask
+DB: MySql
+```
+
+```js
+flask run
+```
+
 ## 8.4 현재까지 기능정의서
 
 ![](/server/static/images/final.gif)
